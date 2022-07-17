@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximiliano Gambetta">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <title>Papa Roach || Sitio oficial</title>
+</head>
+<body>
+
+    <!--
+        header con Logo de la página y enlace spootify
+        -->
+
+        <header>
+        
+            <div class="cajaHeader">
+                <a href="#" title="Recargar página">
+                    <img id="logo" src="img/logo.png" alt="Logo de Papa Roach" title="Papa Roach">
+                  </a>
+                
+                 <span>
+                     <p>Escuchar en</p>
+                </span> 
+                
+                <img id="logoSpoti" src="img/Spotify-logo.png" alt="Logo de spotify" title="Escuchar en spotify">
+                
+                
+                
+            </div>
+            
+        </header>
+
+            <!--
+            Menú principal
+        -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#" title="Ir a Hola" class="borde_activo">Hola</a>
+            </li>
+            <li>
+                <a href="conocenos.html" title="Ir a conócenos">Conócenos</a>
+            </li>
+            <li>
+                <a href="#" title="Ir a tienda">Tienda</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- CREO LA PRIMER SECCION DEL INDEX -->
+    <section id="holaSeccion1">
+        
+        <div id="divSeccion1">
+            <article>
+                    <h1>HOLA</h1>
+                    <p>
+                       A través de esta página podrás tener acceso a todo lo nuevo de la banda, información actualizada
+                       así como también compra de tickets para los próximos eventos y enlaces para escuchar sus discos.
+                     </p>
+                
+            </article>
+        </div>
+    </section>
+
+    <!-- CREO LA SEGUNDA SECCION DEL INDEX -->
+    <section id="holaSeccion2">
+        <h1>NOTICIAS</h1>
+        <div id="divSeccion2">
+            
+            <article>
+                    
+                <img src="img/noticia1.jpg" alt="infest 20 años" title="infest 20 años">
+                <h2>"Infest" live</h2>
+                <h3>Papa Roach se ha visto en la necesidad de pausar las celebraciones de los 20 años de su álbum debut 
+                    "Infest", llevándolos a organizar una transmisión especial en línea en la que lo interpretarán 
+                    de principio a fin.
+                   </h3>
+                <a href="" title="Ir a noticia">Ampliar</a>
+            </article>
+            <article>
+                    
+                <img src="img/noticia2.jpg" alt="Last Resort versión 2020" title="Last Resort versión 2020">
+                <h2>“Last Resort” Versión 2020</h2>
+                <h3> Papa Roach relanzará hit junto con artistas invitados. «Hay alguien de la era del rock moderno que 
+                    está hablando hacia la gente por la gente en este momento. Hay alguien de la escena del Hip-Hop de 
+                    la vieja escuela y hay alguien del Hip-Hop actual que está en este momento. Tenemos un poco de estas 
+                    tres personalidades»
+                   </h3>
+                <a href="" title="Ir a noticia">Ampliar</a>
+            </article>
+            
+        </div>
+    </section>
+
+    <!-- CREO LA TERCERA DEL INDEX tabla y formulario-->
+    <section id="holaSeccion3">
+        <div id="agendaH1">
+            <h1>AGENDA</h1>
+        </div>
+        <div id="divSeccion3"> 
+            
+            <div id="item-1">
+                <h2>EVENTOS</h2>
+                <table id="tbleventos">
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Hora</th>
+                      <th>Lugar</th>
+                    </tr>
+                    <tr>
+                      <td>5/11/20</td>
+                      <td>21:00</td>
+                      <td>Buenos Aires, Argentina The End</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/20</td>
+                        <td>21:30</td>
+                        <td>Santiago de Chile, Chile Teatro Novedades</td>
+                    </tr>
+                    <tr>
+                        <td>16/11/20</td>
+                        <td>23:00</td>
+                        <td>Bogota, Colombia Teatro San Remo</td>
+                    </tr>
+                    <tr>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                        <td class="empty-cell"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="item-2">
+                <h2>COMPRAR TICKETS</h2>
+                <form>
+
+                    <div class="grid-container">
+                        <div class="item1">
+                            <label for="txtnombre">NOMBRE Y APELLIDO(*)</label>
+                            <input type="text" id="txtnombre">
+                        </div>
+                        <div class="item2">
+                            <label for="txtcantidad">CANTIDAD(*)</label>
+                            <input type="number" id="txtcantidad">
+                        </div>
+                        <div class="item3">
+                            <label for="txteventos">EVENTOS</label>
+                                <select id="txteventos">
+                                    <option value="arg">Buenos Aires, Argentina The End</option>
+                                    <option value="chi">Santiago de Chile, Chile Teatro Novedades</option>
+                                    <option value="col">Bogota, Colombia Teatro San Remo</option>
+                                </select>
+                        </div>  
+                        <div class="item4">
+                            <p>Forma de pago</p>
+                                <input type="radio" id="Credito" name="tipoPago" value="Credito">
+                                <label for="Credito">Crédito</label>
+                                <input type="radio" id="Debito" name="tipoPago" value="Debito">
+                                <label for="Debito">Débito</label>
+                        </div>
+                        <div class="item5">
+                            <a href="" title="Comprar">Comprar</a>
+                        </div>
+                        
+                      </div>
+                    
+                </form>
+            </div>
+          
+          </div>
+        </section>
+
+        </div>
+    </section>
+    <!-- CREO EL FOOTER DE LA PAGINA -->
+    <footer class="footerClass">
+        <span>
+            <p>Seguinos!</p>
+        </span>
+            <a id="logoInst" href="#" title="instagram">
+                <img src="img/instagram-application-logo.png" alt="Logo de instagram" title="instagram">
+              </a>
+            <a href="#" title="twitter">
+                <img src="img/twitter-internet-logo.png" alt="Logo de twitter" title="twitter">
+              </a>
+            <a href="#" title="facebook">
+                <img src="img/facebook-logo.png" alt="Logo de facebook" title="facebook">
+              </a>
+    </footer> 
+    
+</body>
+</html>
