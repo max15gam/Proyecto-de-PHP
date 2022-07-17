@@ -1,0 +1,56 @@
+body {
+  background-image: url(../img/pexels-aleksandar-pasaric-1323712.jpg); 
+}
+
+/* ESTILOS DEL NAV */
+
+.navbar-fixed {
+  position: absolute;z-index:999999999 !important; 
+}
+
+#index-banner{
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25em;
+}
+#centroHeader{
+  padding-top: 10em;
+}
+
+#imgLogo{
+  max-width: 10vw; 
+  
+} 
+
+#download-button{
+  background-image: url(../../img/turquoise-angle-font-simple-nice-button-material.jpg);
+}
+
+ 
+
+.intermitente {
+animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+50% {
+opacity: 0;
+}
+}
+
+
+.modal{
+  background-image: url(../img/pexels-aleksandar-pasaric-1323712.jpg); 
+}
+
+.modal-footer{
+  background-image: url(../img/pexels-aleksandar-pasaric-1323712.jpg); 
+}
+
+
+
+.imgFooter{
+max-width: 5em;
+}
+
